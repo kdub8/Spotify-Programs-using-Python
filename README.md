@@ -51,3 +51,61 @@ This Python script automates the process of searching for a song on Spotify. It 
 - Be cautious when automating interactions with applications, and ensure you are complying with Spotify's terms of service and any applicable laws and regulations.
 
 - The script may require adjustments or updates if the Spotify application's user interface changes in the future.
+
+
+# Spotify Artist's Top 10 Songs Finder
+
+## Overview
+
+This Python script allows users to find the top 10 songs of a specific artist on Spotify. It utilizes the Spotify Web API to search for an artist and retrieve their top tracks. The script handles authentication using client credentials and provides a user-friendly interface for inputting the artist's name.
+
+## Prerequisites
+
+- You need to have a Spotify Developer account to obtain the `CLIENT_ID` and `CLIENT_SECRET` required for authentication. These credentials are used to obtain an access token from the Spotify API.
+
+- Ensure you have Python installed on your system.
+
+## Installation
+
+1. Clone this repository or download the script to your local machine.
+
+2. Install the required Python libraries using `pip`:
+
+   ```
+   pip install dotenv requests
+   ```
+
+3. Create a `.env` file in the same directory as the script and add your Spotify API credentials:
+
+   ```
+   CLIENT_ID=your_client_id
+   CLIENT_SECRET=your_client_secret
+   ```
+
+## Usage
+
+1. Run the script using Python:
+
+   ```
+   python spotify_top_songs.py
+   ```
+
+2. The script will prompt you to enter the name of the artist for whom you want to find the top 10 songs.
+
+3. After providing the artist's name, the script will make requests to the Spotify API to retrieve the artist's information and top songs.
+
+4. The top 10 songs of the artist will be displayed in the console, including their names.
+
+5. Enjoy discovering the artist's most popular tracks on Spotify!
+
+## Notes
+
+- This script is designed to work with the Spotify Web API and assumes that the artist name you provide exists on Spotify.
+
+- Be cautious when handling API credentials and ensure you keep them secure. Do not share your credentials with others.
+
+- The Spotify API access token obtained by this script is limited in scope to only retrieve artist and track information.
+
+- Make sure to comply with Spotify's terms of service and API usage policies when using this script.
+
+- The script may require updates if the Spotify API or its endpoints change in the future.
